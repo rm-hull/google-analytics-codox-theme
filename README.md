@@ -14,12 +14,16 @@ the inline javascript to track page hits using Google Analytics.
 
 You must use `codox` version **0.10.1** or above.
 
-Add/blend the following to the `dev-dependencies` section in your _project.clj_:
+Add/blend the following to the `:dev` profile section in your _project.clj_:
 
 ```clojure
-:dev-dependencies [
-  [google-analytics-codox-theme "0.1.0"]
-]
+(defproject myproj 
+  ...
+  
+  :profiles {
+    :dev {
+      :dependencies [
+        [google-analytics-codox-theme "0.1.0"]]}})
 ```
 
 Create or obtain your GA tracking code (this will usually be a value like
@@ -27,10 +31,14 @@ Create or obtain your GA tracking code (this will usually be a value like
 your project (obviously, substituting the _real_ tracking code):
 
 ```clojure
-:codox {
-  :themes [:default [:google-analytics {:tracking-code "UA-12345678-1"}]]
-}
+(defproject myproj 
+  ...
+  
+  :codox {
+    :themes [:default [:google-analytics {:tracking-code "UA-12345678-1"}]]})
 ```
+
+Have a look at the [settings for a project already configured](https://github.com/rm-hull/infix/blob/master/project.clj) with this theme.
 
 Run `lein codox` as normal and publish your newly generated html files: they
 should now all include the relevant tracking code.
