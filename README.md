@@ -2,7 +2,7 @@
 
 [![Clojars Project](https://img.shields.io/clojars/v/google-analytics-codox-theme.svg)](https://clojars.org/google-analytics-codox-theme)
 [![Downloads](https://jarkeeper.com/rm-hull/google-analytics-codox-theme/downloads.svg)](https://jarkeeper.com/rm-hull/google-analytics-codox-theme)
-[![Maintenance](https://img.shields.io/maintenance/yes/2016.svg?maxAge=2592000)]()
+[![Maintenance](https://img.shields.io/maintenance/yes/2017.svg?maxAge=2592000)]()
 
 [codox](https://github.com/weavejester/codox) is a great tool for generating
 API documentation from Clojure or ClojureScript source code.
