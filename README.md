@@ -1,8 +1,8 @@
 # Google Analytics Codox Theme
 
 [![Clojars Project](https://img.shields.io/clojars/v/google-analytics-codox-theme.svg)](https://clojars.org/google-analytics-codox-theme)
-[![Downloads](https://jarkeeper.com/rm-hull/google-analytics-codox-theme/downloads.svg)](https://jarkeeper.com/rm-hull/google-analytics-codox-theme)
-[![Maintenance](https://img.shields.io/maintenance/yes/2017.svg?maxAge=2592000)]()
+[![Downloads](https://versions.deps.co/rm-hull/google-analytics-codox-theme/downloads.svg)](https://versions.deps.co/rm-hull/google-analytics-codox-theme)
+[![Maintenance](https://img.shields.io/maintenance/yes/2018.svg?maxAge=2592000)]()
 
 [codox](https://github.com/weavejester/codox) is a great tool for generating
 API documentation from Clojure or ClojureScript source code.
@@ -17,9 +17,9 @@ You must use `codox` version **0.10.1** or above.
 Add/blend the following to the `:dev` profile section in your _project.clj_:
 
 ```clojure
-(defproject myproj 
+(defproject myproj
   ...
-  
+
   :profiles {
     :dev {
       :dependencies [
@@ -31,14 +31,14 @@ Create or obtain your GA tracking code (this will usually be a value like
 your project (obviously, substituting the _real_ tracking code):
 
 ```clojure
-(defproject myproj 
+(defproject myproj
   ...
-  
+
   :codox {
     :themes [:default [:google-analytics {:tracking-code "UA-12345678-1"}]]})
 ```
 
-Have a look at the [settings for a project already configured](https://github.com/rm-hull/infix/blob/master/project.clj) with this theme.
+Have a look at the [settings for a project already configured](https://github.com/rm-hull/infix/blob/master/project.clj#L22) with this theme.
 
 Run `lein codox` as normal and publish your newly generated html files: they
 should now all include the relevant tracking code.
